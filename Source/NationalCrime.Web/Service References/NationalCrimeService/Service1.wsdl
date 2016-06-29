@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4597/NationalCrimeService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4597/NationalCrimeService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INationalCrimeService_ValidateLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateLogin" />
+  </wsdl:message>
+  <wsdl:message name="INationalCrimeService_ValidateLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="INationalCrimeService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="INationalCrimeService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="INationalCrimeService_SearchCriminal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCriminal" />
+  </wsdl:message>
+  <wsdl:message name="INationalCrimeService_SearchCriminal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCriminalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INationalCrimeService">
+    <wsdl:operation name="ValidateLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/INationalCrimeService/ValidateLogin" message="tns:INationalCrimeService_ValidateLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INationalCrimeService/ValidateLoginResponse" message="tns:INationalCrimeService_ValidateLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/INationalCrimeService/Register" message="tns:INationalCrimeService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INationalCrimeService/RegisterResponse" message="tns:INationalCrimeService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCriminal">
+      <wsdl:input wsaw:Action="http://tempuri.org/INationalCrimeService/SearchCriminal" message="tns:INationalCrimeService_SearchCriminal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INationalCrimeService/SearchCriminalResponse" message="tns:INationalCrimeService_SearchCriminal_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INationalCrimeService" type="tns:INationalCrimeService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateLogin">
+      <soap:operation soapAction="http://tempuri.org/INationalCrimeService/ValidateLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/INationalCrimeService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCriminal">
+      <soap:operation soapAction="http://tempuri.org/INationalCrimeService/SearchCriminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_INationalCrimeService" binding="tns:BasicHttpBinding_INationalCrimeService">
+      <soap:address location="http://localhost:4597/NationalCrimeService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

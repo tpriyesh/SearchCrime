@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+      <link href="@Url.Content("~/content/style.css")" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".non-zero-num").val($(this).val() == 0 ? '' : $(this).val());
+        })
+</script>
+
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div style="margin-left:20px;">
+                @if (Request.IsAuthenticated)
+                { 
+                <div><a href="javascript:void(0)" class="linkclass">Welcome, @HttpContext.Current.User.Identity.Name</a>
+                     @Html.ActionLink("Logoff","logoff","Account",new {},new {@class="linkclass"})
+                   </div>
+                }
+                else
+                {
+                <div>
+                    @Html.ActionLink("Login","logIn","Account",new {},new {@class="linkclass"})
+                       @Html.ActionLink("Register","Register","Account",new {},new {@class="linkclass"})
+                </div>
+                }
+
+            </div>
+
+        </div>
+       <div align="center"> <h1>National Crime</h1></div>
+        @RenderBody()
+    </div>
+</body>
+</html>

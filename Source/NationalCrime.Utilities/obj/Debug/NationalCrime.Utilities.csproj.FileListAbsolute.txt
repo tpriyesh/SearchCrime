@@ -1,0 +1,5 @@
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Utilities\bin\Debug\NationalCrime.Utilities.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Utilities\bin\Debug\NationalCrime.Utilities.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Utilities\obj\Debug\NationalCrime.Utilities.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Utilities\obj\Debug\NationalCrime.Utilities.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Utilities\obj\Debug\NationalCrime.Utilities.csprojResolveAssemblyReference.cache

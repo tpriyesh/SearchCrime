@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NationalCrime.Service", "NationalCrime.Service\NationalCrime.Service.csproj", "{29AA6DE5-F0FB-41EE-8159-DC46D9EB5A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NationalCrime.Web", "NationalCrime.Web\NationalCrime.Web.csproj", "{9BFCE392-90E2-4669-82CE-2E27B458AC51}"
+	ProjectSection(ProjectDependencies) = postProject
+		{29AA6DE5-F0FB-41EE-8159-DC46D9EB5A56} = {29AA6DE5-F0FB-41EE-8159-DC46D9EB5A56}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NationalCrime.Dal", "NationalCrime.Dal\NationalCrime.Dal.csproj", "{38A08BC2-8509-49AA-B774-D9111F80D7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NationalCrime.Infrastructure", "NationalCrime.Infrastructure\NationalCrime.Infrastructure.csproj", "{7DAD1D9B-CE02-439C-B929-193B3FA999D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NationalCrime.Utilities", "NationalCrime.Utilities\NationalCrime.Utilities.csproj", "{8AD9033D-D315-4E4E-B3BB-D86C75420787}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29AA6DE5-F0FB-41EE-8159-DC46D9EB5A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AA6DE5-F0FB-41EE-8159-DC46D9EB5A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AA6DE5-F0FB-41EE-8159-DC46D9EB5A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AA6DE5-F0FB-41EE-8159-DC46D9EB5A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BFCE392-90E2-4669-82CE-2E27B458AC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFCE392-90E2-4669-82CE-2E27B458AC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFCE392-90E2-4669-82CE-2E27B458AC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFCE392-90E2-4669-82CE-2E27B458AC51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A08BC2-8509-49AA-B774-D9111F80D7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A08BC2-8509-49AA-B774-D9111F80D7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A08BC2-8509-49AA-B774-D9111F80D7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A08BC2-8509-49AA-B774-D9111F80D7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAD1D9B-CE02-439C-B929-193B3FA999D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAD1D9B-CE02-439C-B929-193B3FA999D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAD1D9B-CE02-439C-B929-193B3FA999D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAD1D9B-CE02-439C-B929-193B3FA999D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD9033D-D315-4E4E-B3BB-D86C75420787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD9033D-D315-4E4E-B3BB-D86C75420787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD9033D-D315-4E4E-B3BB-D86C75420787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD9033D-D315-4E4E-B3BB-D86C75420787}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

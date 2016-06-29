@@ -1,0 +1,9 @@
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\obj\Debug\NationalCrime.Infrastructure.csprojResolveAssemblyReference.cache
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\bin\Debug\NationalCrime.Infrastructure.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\bin\Debug\NationalCrime.Infrastructure.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\bin\Debug\itextsharp.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\bin\Debug\NationalCrime.Dal.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\bin\Debug\NationalCrime.Dal.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\bin\Debug\itextsharp.xml
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\obj\Debug\NationalCrime.Infrastructure.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Infrastructure\obj\Debug\NationalCrime.Infrastructure.pdb

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="18ab3e31-8a0a-459c-bb6d-18b7ec093900" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4597/nationalcrimeservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NationalCrimeService.xsd" MetadataType="Schema" ID="b6570a59-0112-4975-b347-a95928c65c25" SourceId="1" SourceUrl="http://localhost:4597/NationalCrimeService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NationalCrimeService2.xsd" MetadataType="Schema" ID="23654aca-6aee-40dd-8a05-c88f2bd3556c" SourceId="1" SourceUrl="http://localhost:4597/NationalCrimeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NationalCrimeService.disco" MetadataType="Disco" ID="26f1b2ae-70e0-4011-a8c6-34444a51e1f3" SourceId="1" SourceUrl="http://localhost:4597/NationalCrimeService.svc?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="d34564ec-4e31-4860-9152-a0ce172ce426" SourceId="1" SourceUrl="http://localhost:4597/NationalCrimeService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

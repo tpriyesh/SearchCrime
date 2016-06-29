@@ -1,0 +1,67 @@
+﻿@model NationalCrime.Web.ViewModel.SearchViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<div style="font-size:15px;color:red;text-align:center">Note: If no search parameters are specified then all criminals will be searched.Matched criminals pdf is sent to the mail Id which user will specify in below form.Height should be in <i>cm</i>,weight should be in <i>kg</i> and age should be in integers</div>
+
+
+@using (Html.BeginForm("Index", "Search", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+    if (ViewData["errors"] != null)
+    {
+        string[] errors = (string[])ViewData["errors"];
+    <div class="allerrors">
+        @foreach (var error in errors)
+        { 
+            <span style="color: red">@error</span>
+        }
+    </div>
+    }
+    
+    <div class="allerrors">
+         @Html.ValidationMessageFor(m=>m.Email)
+         @Html.ValidationMessageFor(m=>m.StartAge)
+         @Html.ValidationMessageFor(m=>m.EndAge)
+         @Html.ValidationMessageFor(m=>m.StartHeightRange)
+         @Html.ValidationMessageFor(m=>m.EndHeightRange)
+         @Html.ValidationMessageFor(m=>m.StartWeightRange)
+         @Html.ValidationMessageFor(m=>m.EndWeightRange)
+        
+    </div>
+    
+    if (ViewData["success"] != null)
+    { 
+    <span style="text-align:center;color:green">@ViewData["success"]</span>
+    }
+    
+    
+    <div id="search-container">
+        <h5 style="margin-left: 15px;">Search Criminals</h5>
+        <label for="email">Email:</label>
+        @Html.TextBoxFor(m => m.Email, new { @placeholder="Please Enter Email",@title="Email where results will be sent"})
+        <label for="name">Name:</label>
+        @Html.TextBoxFor(m => m.Name,new { @placeholder="Please Enter Name of the criminal",@title="Name of the criminal"})
+        <label for="nationality">Nationality:</label>
+        @Html.TextBoxFor(m => m.Nationality,new { @placeholder="Nationality of the criminal",@title="Nationality of the criminal"})
+
+        <label for="gender">Gender:</label>
+        <select name="Gender">
+            <option value="">Please Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+        <label for="age">Age Range:</label>
+        @Html.TextBoxFor(m => m.StartAge, new { @placeholder="Please Enter Start age",@title="Start age range"}) <span>-</span>@Html.TextBoxFor(m => m.EndAge,new { @placeholder="Please Enter End age",@title="End age range"})
+
+        <label for="height">Height Range:</label>
+        @Html.TextBoxFor(m => m.StartHeightRange,new {@placeholder="Please Enter Start height",@title="Start height range"}) <span>-</span>@Html.TextBoxFor(m => m.EndHeightRange,new { @placeholder="Please Enter End height",@title="End height range"})
+
+        <label for="weight">Weight Range:</label>
+        @Html.TextBoxFor(m => m.StartWeightRange,new { @placeholder="Please Enter Start Weight",@title="Start weight range"}) <span>-</span>@Html.TextBoxFor(m => m.EndWeightRange,new {@placeholder="Please Enter End weight",@title="End weight range"})
+
+        <input type="submit" name="submit" value="submit" />
+    </div>   
+}

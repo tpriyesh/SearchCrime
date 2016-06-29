@@ -1,0 +1,13 @@
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\obj\Debug\NationalCrime.Service.csprojResolveAssemblyReference.cache
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Service.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Service.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Dal.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Dal.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\obj\Debug\NationalCrime.Service.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\obj\Debug\NationalCrime.Service.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\itextsharp.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\itextsharp.xml
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Infrastructure.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Infrastructure.pdb
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Utilities.dll
+E:\WorkingCodes\crossover\NationalCrime\NationalCrime.Web\NationalCrime.Service\bin\NationalCrime.Utilities.pdb
